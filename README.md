@@ -1,7 +1,7 @@
 # CSC172_01
 
 Ethan Chang
-echang28@u.rochester.edu
+/n echang28@u.rochester.edu
 
 CSC 172 Summer 2024
 Lab 1: Java Refresher
