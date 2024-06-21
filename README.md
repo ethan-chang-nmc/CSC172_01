@@ -1,5 +1,4 @@
 # CSC172_01
-CSC 172 Java Generics
 
 Ethan Chang
 echang28@u.rochester.edu
