@@ -1,6 +1,6 @@
 # CSC172_01
 
-Ethan Chang
+Ethan Chang <br />
 echang28@u.rochester.edu
 
 CSC 172 Summer 2024
