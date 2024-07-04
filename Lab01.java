@@ -20,10 +20,16 @@ public class Main
     }
 
     /*
-    *Implementation of the print array function, which itterates through an inputed array and prints each element
+    *Implementation of the print array function, which iterates through an input array and prints each element
     */
-    public static void printArray(Object array)
+    /*FIRST IMPLEMENTATION
+    public static void printArray(Object[] array) 
     {
-        f
+        for (Object element : array) //go through each element in the array
+        {
+            System.out.print(element + ", "); //print out that element, seperated by ,
+        }
+        System.out.println(); //new line for next time it is called
     }
+    */
 }
