@@ -2,6 +2,8 @@
 *Ethan Chang
 *echang28@u.rochester.edu
 *
+*Partner: Darron King
+*
 *07/07/2024: Implementing a print array and get maximum function
 */
 import java.util.function.Function;
