@@ -12,26 +12,54 @@ public class Lab01
         /*problems 1-3*/
         Integer [] intArry = {1, 2, 3, 4, 5 };
         Double [] doubArry = {1.1, 2.2, 3.3, 4.4};
-        Character [] charArray = {'H','E','L', 'L', 'O' };
-        String [] strArray = {"once", "upon", "a", "time" };
+        Character [] charArry = {'H','E','L', 'L', 'O' };
+        String [] strArry = {"once", "upon", "a", "time" };
         printArray(intArry);
         printArray(doubArry);
-        printArray(charArray);
-        printArray(strArray);
+        printArray(charArry);
+        printArray(strArry);
         /*problems 4-6*/
-        System.out.println("max Integer is: " + getMax(intArry);
-        System.out.println("max Double is: " + getMax(doubArry);
-        System.out.println("max Character is: " + getMax(charArry);
-        System.out.println("max String is: " + getMax(strArry);
+        System.out.println("max Integer is: " + getMax(intArry));
+        System.out.println("max Double is: " + getMax(doubArry));
+        System.out.println("max Character is: " + getMax(charArry));
+        System.out.println("max String is: " + getMax(strArry)) ;
     }
 
     /*
     *Implementation of the getMax function, which iterates through an input array and returns the max value
     */
-    public static Comparable getMax(Comparable [] anArray)
+    /*SECOND IMPLEMENTATION OF getMas WITH GENERICS */
+    public static <T extends Comparable<T>> T getMax(T[] anArray)
     {
-        
+        T maxval = anArray[0];
+        for (int i = 1; i < anArray.length; i++)
+        {
+            if (anArray[i].compareTo(maxval)>0)
+            {
+                maxval = anArray[i];
+            }
+        }
+        return maxval;
     }
+
+    /*FIRST IMPLEMENTATION OF getMax WITHOUT GENERICS
+    *Errors: Exception in thread "main" java.lang.Error: Unresolved compilation problems: 
+        charArry cannot be resolved to a variable
+        strArry cannot be resolved to a variable
+    public static Comparable getMax(Comparable[] anArray)
+    {
+        Comparable maxval = anArray[0];
+        for (int i = 1; i < anArray.length; i++)
+        {
+            if (anArray[i].compareTo(maxval)>0)
+            {
+                maxval = anArray[i];
+            }
+        }
+        return maxval;
+    }
+    */
+
     /*
     *Implementation of the print array function, which iterates through an input array and prints each element
     */
