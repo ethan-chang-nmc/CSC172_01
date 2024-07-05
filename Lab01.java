@@ -2,8 +2,6 @@
 *Ethan Chang
 *echang28@u.rochester.edu
 *
-*Partner: Darron King
-*
 *07/07/2024: Implementing a print array and get maximum function
 */
 import java.util.function.Function;
@@ -29,13 +27,10 @@ public class Lab01
         System.out.println("max String is: " + getMax(strArry)) ;
 
         /*creating a function for max character*/
-        Function<Character[], Character> findMax = (Character[] inpArray) ->//map char array to char'
-        {
+        Function<Character[], Character> findMax = (Character[] inpArray) -> { //map char array to char
             Character max = inpArray[0]; //set max char to first char
-            for (int i = 1; i < inpArray.length; i++) //iterrates through char array and replaces max with larger char
-            {
-                if (inpArray[i].compareTo(max) > 0) 
-                {
+            for (int i = 1; i < inpArray.length; i++) { //iterrates through char array and replaces max with larger char
+                if (inpArray[i].compareTo(max) > 0) {
                     max = inpArray[i];
                 }
             }
@@ -121,7 +116,7 @@ public class Lab01
     }
     public static void printArray(String[] array) 
     {
-        for (str element : array) //go through each element in the array
+        for (String element : array) //go through each element in the array
         {
             System.out.print(element + " "); //print out that element, seperated by spaces
         }
