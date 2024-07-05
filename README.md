@@ -3,6 +3,8 @@
 Ethan Chang <br />
 echang28@u.rochester.edu
 
+Partner: Darron King
+
 CSC 172 Summer 2024
 Lab 1: Java Refresher
 
