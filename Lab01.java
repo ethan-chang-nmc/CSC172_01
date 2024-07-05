@@ -36,7 +36,7 @@ public class Lab01
             }
             return max;
         };
-        System.out.println("max Double is: " + findMax.apply(charArry));
+        System.out.println("max Character is: " + findMax.apply(charArry));
     }
 
     /*
